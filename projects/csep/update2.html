@@ -421,7 +421,7 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#faculty">
-   Faculty:
+   Faculty
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -479,6 +479,23 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graduate-degrees">
+     Graduate Degrees
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Question
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#respective-rankings">
+       Respective Rankings
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#software-used">
      Software Used
     </a>
@@ -512,7 +529,7 @@
 </ul>
 </div>
 <div class="section" id="faculty">
-<h2>Faculty:<a class="headerlink" href="#faculty" title="Permalink to this headline">¶</a></h2>
+<h2>Faculty<a class="headerlink" href="#faculty" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Alexander Franks, Lubi Lenaburg, Joshua Bang</p></li>
 </ul>
@@ -558,6 +575,20 @@
 <p>The CSEP data combined to form a data frame containing the quantifiable characteristics of their highschool (SAT Quintile, Total Enrollment, Graduates, etc.), their degree and college characteristics (Honors Program, Study Abroad, STEM, College, etc.), their characteristics (Gender), and their level of job title. The level of job title is divided into sixteen categories from intern to owner/CEO. Based on their job title and description, everyone was placed into a level. After dropping all rows with Null data, there were over five thousand rows to model on. The level of Job Title was converted into numerical labels and all other categorical features were one-hot encoded. Then a multinomial logistic regression model predicted a graduate’s first job out of college. Finally, cross-validation tuned the results. The model predicts with 30% accuracy, three times better than a random guess.</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../../_images/Multinomial_Logistic_Regression.png"><img alt="../../_images/Multinomial_Logistic_Regression.png" src="../../_images/Multinomial_Logistic_Regression.png" style="width: 548.1px; height: 237.6px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="graduate-degrees">
+<h3>Graduate Degrees<a class="headerlink" href="#graduate-degrees" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Question<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Do Our UCSB Alumni Receive Their ‘Graduate’ Degree From a Top 10 University For Their Specific Discipline?</p>
+</div>
+<div class="section" id="respective-rankings">
+<h4>Respective Rankings<a class="headerlink" href="#respective-rankings" title="Permalink to this headline">¶</a></h4>
+<p>There is a lot of wonder where our UCSB alumni actually earn their ‘Graduate’ degree from. Particularly, we’re looking at students who went to a university that was a top-tier school for what they were studying in. For instance, if we were looking at students who earned their ‘Graduate’ Degree under a Computer Science discilpline, then we want to see if that university is a top-tier university for Computer Science. To keep in mind on the rankings, we pulled from <a class="reference external" href="http://usnews.com">usnews.com</a> under their best graduate degree programs for specific majors. We were able to do that for a few choices: Electrical Engineering(2020 list), Computer Science(2018 list), Economics(2017 list), Statistics(2018 list), and Physics(2018 list). Our goal would be then to utilize a machine learning algorithm to be able to predict of the XX students who earned their ‘Graduate’ Degree under a XY discipline, then we can predict a subset of those XX students will attend a top-10 university for their discipline.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="projects/csep/TopEEGrads.pngTopCSGrads.pngTopEconGrads.pngTopStatsGrads.pngTopPhysicsGrads.png"><img alt="projects/csep/TopEEGrads.pngTopCSGrads.pngTopEconGrads.pngTopStatsGrads.pngTopPhysicsGrads.png" src="projects/csep/TopEEGrads.pngTopCSGrads.pngTopEconGrads.pngTopStatsGrads.pngTopPhysicsGrads.png" /></a>
 </div>
 </div>
 </div>
